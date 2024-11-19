@@ -1,5 +1,7 @@
 ## **Dokumentasi: Aplikasi Pencarian Icon Font Awesome (v6.7.0)**
 
+Demo: [Fontawesome](https://orlinkzz.github.io/fontawesome-pro-v6.7.0/)
+
 ### **1. Deskripsi**
 Aplikasi ini adalah alat untuk mencari dan menampilkan ikon dari **Font Awesome versi 6.7.0**. Fitur ini dirancang untuk membantu pengguna memilih ikon yang sesuai untuk proyek mereka dengan kemudahan navigasi dan pencarian. Aplikasi ini mendukung:
 
