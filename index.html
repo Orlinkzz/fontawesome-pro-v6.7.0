@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Font Search</title>
+
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/pro.min.css">
+	<link rel="stylesheet" href="css/sharp-duotone-thin.css">
+	<link rel="stylesheet" href="css/sharp-duotone-solid.css">
+	<link rel="stylesheet" href="css/sharp-duotone-regular.css">
+	<link rel="stylesheet" href="css/sharp-duotone-light.css">
+	<link rel="stylesheet" href="css/sharp-thin.css">
+	<link rel="stylesheet" href="css/sharp-solid.css">
+	<link rel="stylesheet" href="css/sharp-regular.css">
+	<link rel="stylesheet" href="css/sharp-light.css">
+	<link rel="stylesheet" href="css/duotone-thin.css">
+	<link rel="stylesheet" href="css/duotone-regular.css">
+	<link rel="stylesheet" href="css/duotone-light.css">
+	<link rel="stylesheet" href="css/woff2.css">
+
+	<link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-50 min-h-screen flex flex-col items-center">
+	<!-- Switch Container -->
+	<div class="switch-container w-full max-w-4xl flex items-center justify-between mt-6 p-4 bg-white rounded-lg shadow space-x-4">
+		<input 
+			type="text" 
+			id="search" 
+			placeholder="Search icons..." 
+			class="flex-1 p-2 rounded-lg border border-gray-300 shadow-sm focus:ring focus:ring-blue-300 focus:outline-none"
+		>
+		<select 
+			id="iconTypeSwitch" 
+			class="p-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-300"
+		>
+			<option value="light">Light</option>
+			<option value="regular">Regular</option>
+			<option value="solid">Solid</option>
+			<option value="thin">Thin</option>
+		</select>
+	</div>
+
+	<!-- Tab Navigation -->
+	<div class="tabs-container w-full max-w-4xl mt-6">
+    <ul class="flex border-b bg-white rounded-t-lg shadow">
+        <li class="mr-1">
+            <button 
+                class="tab-button px-4 py-2 text-gray-700 rounded-t-lg hover:bg-gray-200 focus:outline-none active" 
+                data-tab="all"
+            >
+                All
+            </button>
+        </li>
+        <li class="mr-1">
+            <button 
+                class="tab-button px-4 py-2 text-gray-700 rounded-t-lg hover:bg-gray-200 focus:outline-none" 
+                data-tab="brands"
+            >
+                Brands
+            </button>
+        </li>
+    </ul>
+</div>
+
+	<!-- Tab Content -->
+	<div id="tabsContent" class="w-full max-w-4xl mt-2 bg-white rounded-b-lg shadow p-4">
+		<!-- All Tab -->
+		<div class="tab-content" data-tab="all">
+			<div id="iconList" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+				<!-- Icons will be dynamically added here -->
+			</div>
+
+			<!-- Pagination Controls for All -->
+			<div class="pagination-controls flex justify-between items-center mt-4">
+				<button 
+					id="prevPageAll" 
+					class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 focus:ring focus:ring-gray-300 disabled:opacity-50" 
+					disabled
+				>
+					Previous
+				</button>
+				<span id="pageInfoAll" class="text-gray-700"></span>
+				<button 
+					id="nextPageAll" 
+					class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 focus:ring focus:ring-gray-300 disabled:opacity-50"
+				>
+					Next
+				</button>
+			</div>
+		</div>
+		<!-- Brands Tab -->
+		<div class="tab-content hidden" data-tab="brands">
+			<div id="brandsList" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+				<!-- Icons will be dynamically added here -->
+			</div>
+
+			<!-- Pagination Controls for Brands -->
+			<div class="pagination-controls flex justify-between items-center mt-4">
+				<button 
+					id="prevPageBrands" 
+					class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 focus:ring focus:ring-gray-300 disabled:opacity-50" 
+					disabled
+				>
+					Previous
+				</button>
+				<span id="pageInfoBrands" class="text-gray-700"></span>
+				<button 
+					id="nextPageBrands" 
+					class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 focus:ring focus:ring-gray-300 disabled:opacity-50"
+				>
+					Next
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/pro.min.js"></script>
+</body>
+</html>
