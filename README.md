@@ -42,7 +42,6 @@ Untuk menggunakan ikon dan mendukung berbagai gaya serta animasi, tambahkan kode
 #### **b. Tambahkan JavaScript Sebelum Tag Penutup `<body>`**
 Untuk mengaktifkan fungsi animasi dan fitur pencarian ikon, tambahkan skrip berikut sebelum tag penutup `<body>`:
 ```html
-<script src="js/all.js"></script>
 <script src="js/pro.min.js"></script>
 ```
 
