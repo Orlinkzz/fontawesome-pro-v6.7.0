@@ -20,7 +20,7 @@ Aplikasi ini adalah alat untuk mencari dan menampilkan ikon dari **Font Awesome 
 ---
 
 ### **2. Cara Penggunaan**
-#### **a. Tambahkan CSS ke dalam Tag `<head>`**
+#### Tambahkan CSS ke dalam Tag `<head>` 
 Untuk menggunakan ikon dan mendukung berbagai gaya serta animasi, tambahkan kode berikut ke dalam tag `<head>` di file HTML Anda:
 ```html
 <link rel="stylesheet" href="css/all.css">
@@ -38,13 +38,6 @@ Untuk menggunakan ikon dan mendukung berbagai gaya serta animasi, tambahkan kode
 <link rel="stylesheet" href="css/duotone-light.css">
 <link rel="stylesheet" href="css/woff2.css">
 ```
-
-#### **b. Tambahkan JavaScript Sebelum Tag Penutup `<body>`**
-Untuk mengaktifkan fungsi animasi dan fitur pencarian ikon, tambahkan skrip berikut sebelum tag penutup `<body>`:
-```html
-<script src="js/pro.min.js"></script>
-```
-
 ---
 
 ### **3. Fitur Utama**

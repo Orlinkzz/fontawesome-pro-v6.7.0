@@ -17,9 +17,13 @@ function enableSearch() {
         // Filter icons based on the search term
         const filteredIcons = icons.filter(icon => icon.toLowerCase().includes(searchTerm));
         renderIcons(filteredIcons, containerId, 1, currentIconType); // Render filtered icons
-        updatePaginationControls(filteredIcons, 1, activeTab === 'brands' ? 'pageInfoBrands' : 'pageInfoAll', 
-                                  activeTab === 'brands' ? 'prevPageBrands' : 'prevPageAll', 
-                                  activeTab === 'brands' ? 'nextPageBrands' : 'nextPageAll');
+        updatePaginationControls(
+            filteredIcons,
+            1,
+            activeTab === 'brands' ? 'pageInfoBrands' : 'pageInfoAll',
+            activeTab === 'brands' ? 'prevPageBrands' : 'prevPageAll',
+            activeTab === 'brands' ? 'nextPageBrands' : 'nextPageAll'
+        );
     });
 }
 
@@ -119,6 +123,7 @@ function setupPagination(icons, containerId, currentPageRef, pageInfoId, prevBut
 function enableTabs() {
     const tabButtons = document.querySelectorAll('.tab-button');
     const tabContents = document.querySelectorAll('.tab-content');
+    const iconTypeSwitch = document.getElementById('iconTypeSwitch'); // Akses dropdown iconTypeSwitch
 
     tabButtons.forEach(button => {
         button.addEventListener('click', function () {
@@ -130,14 +135,25 @@ function enableTabs() {
                 content.classList.toggle('hidden', content.getAttribute('data-tab') !== tab);
             });
 
+            // Sembunyikan iconTypeSwitch jika tab adalah "brands"
+            if (tab === 'brands') {
+                iconTypeSwitch.classList.add('hidden');
+            } else {
+                iconTypeSwitch.classList.remove('hidden');
+            }
+
             const icons = tab === 'brands' ? brandsIcons : allIcons;
             const containerId = tab === 'brands' ? 'brandsList' : 'iconList';
             const currentPageRef = tab === 'brands' ? { current: currentPageBrands } : { current: currentPageAll };
 
             renderIcons(icons, containerId, 1, currentIconType);
-            updatePaginationControls(icons, 1, tab === 'brands' ? 'pageInfoBrands' : 'pageInfoAll',
-                                     tab === 'brands' ? 'prevPageBrands' : 'prevPageAll',
-                                     tab === 'brands' ? 'nextPageBrands' : 'nextPageAll');
+            updatePaginationControls(
+                icons,
+                1,
+                tab === 'brands' ? 'pageInfoBrands' : 'pageInfoAll',
+                tab === 'brands' ? 'prevPageBrands' : 'prevPageAll',
+                tab === 'brands' ? 'nextPageBrands' : 'nextPageAll'
+            );
         });
     });
 }

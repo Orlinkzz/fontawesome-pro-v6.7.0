@@ -24,7 +24,7 @@ This app is a tool to search and display icons from **Font Awesome version 6.7.0
 ---
 
 ### **2. How to Use**
-#### **a. Add CSS to the `<head>` Tag**
+#### Add CSS to the `<head>` Tag**
 To use the icons and support various styles and animations, add the following code to the `<head>` section of your HTML file:
 ```html
 <link rel="stylesheet" href="css/all.css">
@@ -42,14 +42,6 @@ To use the icons and support various styles and animations, add the following co
 <link rel="stylesheet" href="css/duotone-light.css">
 <link rel="stylesheet" href="css/woff2.css">
 ```
-
-#### **b. Add JavaScript Before the Closing `<body>` Tag**
-To enable animation and search functionalities, add the following scripts before the closing `<body>` tag:
-```html
-<script src="js/all.js"></script>
-<script src="js/pro.min.js"></script>
-```
-
 ---
 
 ### **3. Key Features**
