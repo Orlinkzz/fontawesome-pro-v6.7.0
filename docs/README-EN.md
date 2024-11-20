@@ -4,6 +4,9 @@ Here’s the English version of the documentation:
 
 ## **Documentation: Font Awesome Icon Finder App (v6.7.0)**
 
+Demo: [Fontawesome](https://orlinkzz.github.io/fontawesome-pro-v6.7.0/)
+
+<a href="https://www.buymeacoffee.com/humaedi" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 ---
 
 ### **1. Description**
