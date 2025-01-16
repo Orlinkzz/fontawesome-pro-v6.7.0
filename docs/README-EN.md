@@ -128,7 +128,7 @@ Icons can spin continuously:
 ---
 ### **Note: Indonesia Documentation**
 For the Indonesia version of the documentation, please refer to the following file:  
-📂 `README-EN.md`
+📂 `README.md`
 
 ---
 ### **5. Conclusion**
